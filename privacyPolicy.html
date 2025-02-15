@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Політика конфіденційності</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .accordion {
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+            background-color: #f9f9f9;
+        }
+        .accordion:hover {
+            background-color: #e0e0e0;
+        }
+        .panel {
+            display: none;
+            padding: 10px;
+            background: #fff;
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Політика конфіденційності</h1>
+        
+        <div class="accordion">1. Загальна інформація</div>
+        <div class="panel">Ми, Brandford Digital Agency, з повагою ставимося до конфіденційності наших клієнтів та відвідувачів нашого сайту. У цій Політиці конфіденційності ми пояснюємо, як ми збираємо, використовуємо, зберігаємо та захищаємо вашу інформацію.</div>
+        
+        <div class="accordion">2. Яку інформацію ми збираємо</div>
+        <div class="panel">
+            <ul>
+                <li><strong>Особисті дані:</strong> ім'я, прізвище, електронна пошта, номер телефону та інша контактна інформація.</li>
+                <li><strong>Технічна інформація:</strong> IP-адреса, тип браузера, операційна система, файли cookie та інші технології відстеження.</li>
+                <li><strong>Інформація про використання послуг:</strong> які сторінки ви відвідуєте, які послуги замовляєте, як взаємодієте з нашим сайтом.</li>
+            </ul>
+        </div>
+        
+        <div class="accordion">3. Як ми використовуємо ваші дані</div>
+        <div class="panel">
+            <ul>
+                <li>Надання та покращення наших послуг.</li>
+                <li>Обробка ваших запитів та замовлень.</li>
+                <li>Персоналізація контенту та рекламних пропозицій.</li>
+                <li>Аналітика та статистика для покращення роботи сайту.</li>
+                <li>Виконання юридичних зобов’язань.</li>
+            </ul>
+        </div>
+        
+        <div class="accordion">4. Захист вашої інформації</div>
+        <div class="panel">Ми впроваджуємо відповідні технічні та організаційні заходи для захисту ваших персональних даних від несанкціонованого доступу, зміни, розголошення чи знищення.</div>
+        
+        <div class="accordion">5. Передача інформації третім сторонам</div>
+        <div class="panel">Ми не продаємо та не передаємо ваші персональні дані третім особам без вашої згоди, за винятком випадків, коли це необхідно для надання послуг, виконання законних зобов’язань або захисту наших прав.</div>
+        
+        <div class="accordion">6. Використання файлів cookie</div>
+        <div class="panel">Наш сайт використовує файли cookie для покращення роботи та персоналізації вашого досвіду. Ви можете змінити налаштування браузера щодо використання cookie.</div>
+        
+        <div class="accordion">7. Ваші права</div>
+        <div class="panel">
+            <ul>
+                <li>Отримувати інформацію про обробку ваших персональних даних.</li>
+                <li>Вимагати виправлення або видалення ваших даних.</li>
+                <li>Відкликати згоду на обробку даних.</li>
+                <li>Подавати скарги до контролюючих органів.</li>
+            </ul>
+        </div>
+        
+        <div class="accordion">8. Зміни у Політиці конфіденційності</div>
+        <div class="panel">Ми можемо періодично оновлювати цю Політику конфіденційності. Будь-які зміни будуть опубліковані на цій сторінці.</div>
+        
+        <div class="accordion">9. Контактна інформація</div>
+        <div class="panel">Якщо у вас виникли питання щодо Політики конфіденційності, зв’яжіться з нами за електронною поштою: brandford.da@gmail.com</div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.accordion').forEach(item => {
+            item.addEventListener('click', function() {
+                this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
