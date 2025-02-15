@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                    "X-Mailer: PHP/" . phpversion();
 
         // Відправка email
-        if (mail("khaitawng2014@gmail.com", $subject, $message, $headers)) {
+        if (mail("dmitrieenko04@gmail.com", $subject, $message, $headers)) {
             echo "success";
         } else {
             echo "error";
