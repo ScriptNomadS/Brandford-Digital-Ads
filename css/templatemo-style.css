@@ -514,6 +514,8 @@ img .custom-navbar .navbar-brand {
 
 .about-image {
   position: absolute;
+  width: 700px;
+  height: auto;
 }
 
 
