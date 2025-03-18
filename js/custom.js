@@ -142,7 +142,6 @@
   });
 
 
-
     // SMOOTHSCROLL
     $(function() {
       $('.custom-navbar a, #home a').on('click', function(event) {
@@ -159,6 +158,11 @@
     new WOW({ mobile: false }).init();
 
 })(jQuery);
+
+
+    // Features
+    
+
 
 
     //Cookie
