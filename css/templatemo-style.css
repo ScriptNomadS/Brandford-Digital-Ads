@@ -4,6 +4,14 @@ body {
   background: #ffffff;
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
+
+  overscroll-behavior-x: none; /* Запрещает горизонтальный скроллинг */
+  overflow-x: hidden; /* Скрывает горизонтальную прокрутку */ 
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 
@@ -131,8 +139,6 @@ section {
   width: 100%;
   height: 390px;
 }
-
-
 
 /*---------------------------------------
    BUTTONS               
@@ -493,6 +499,12 @@ img .custom-navbar .navbar-brand {
   padding-bottom: 100px;
 }
 
+@media (max-width: 768px) {
+  #about {
+    background-color: #152a39;
+  }
+}
+
 .about-title {
   color: #d6a967;
 }
@@ -545,6 +557,27 @@ img .custom-navbar .navbar-brand {
   }
 }
 
+.about-us-main-img {
+  /* background-image: url('../images/About-us-main.png'); */ /* Замените на ваш путь к изображению */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+  @media (max-width: 768px) {
+    #about {
+      height: 55vh; /* Менша висота на мобільних */
+    }
+  
+    .about-us-main-img {
+      object-fit: contain; /* Запобігає обрізанню */
+    }
+  }
+  
+}
 
 
 /*---------------------------------------
@@ -636,6 +669,98 @@ img .custom-navbar .navbar-brand {
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-top: 5px;
+}
+
+
+.carousel {
+  margin-top: 200px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.carousel__item {
+  position: relative;
+  height: 55rem;
+  width: 45rem;
+  border-radius: 3px;
+  overflow: hidden;
+  /* box-shadow: 0 1rem 4rem rgba(0,0,0,.5); */
+  position: absolute;
+  transform: translate(-50%,-50%) scale(.1);
+  z-index: 0;
+  transition: all .2s linear;
+  
+}
+.carousel__item img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.carousel__item--main {
+  transform: translate(-50%,-50%) scale(1);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.carousel__item--left {
+  transform: translate(-130%,-50%) scale(.9);
+  z-index: 1;
+}
+.carousel__item--right {
+  transform: translate(30%,-50%) scale(.9);
+  z-index: 1;
+}
+.carousel__item--left img, .carousel__item--right img {
+  filter: grayscale(80%);
+}
+
+.carousel__item--right:hover {
+  transform: translate(10%,-50%) scale(1.2);
+  z-index: 3;
+  cursor: pointer;
+}
+.carousel__item--left:hover {
+  transform: translate(-110%,-50%) scale(1.2);
+  z-index: 3;
+  cursor: pointer;
+}
+.carousel__item--main:hover {
+  transform: translate(-50%,-50%) scale(1.2);
+}
+.carousel__item:hover > .carousel__text {
+  opacity: 1;
+}
+.carousel__item:hover img {
+  filter: grayscale(0%);
+}
+.carousel__btns {
+  position: absolute;
+  bottom: 10px; /* Опускаємо кнопки вниз */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2rem;
+  z-index: 5;
+}
+.carousel__btn {
+  background-color: rgba(0, 0, 0, 0.5); /* Трохи затемнити кнопки */
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel__btn svg {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+.carousel__btn:hover {
+  color: #aaa;
 }
 
 
@@ -740,6 +865,8 @@ img .custom-navbar .navbar-brand {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background-color: #001f3d;
+  
 }
 
 .image-menu {
@@ -753,7 +880,7 @@ img .custom-navbar .navbar-brand {
 
 @media (max-width: 768px) {
   #menu {
-    height: 60vh; /* Менша висота на мобільних */
+    height: 55vh; /* Менша висота на мобільних */
   }
 
   .image-menu {
@@ -913,9 +1040,23 @@ img .custom-navbar .navbar-brand {
   }
 }
 
+.button_open_quiz_popup {
+  text-align:center;
+  font-size:16px;
+  font-weight:700;
+  padding:12px 30px;
+  width:auto;
+  background-color:#1a2334;
+  border:1px solid #1a2334;
+  color:#FFF; 
+  box-shadow: 3px 3px 10px 0px #1a2334; 
+  border-radius:10px; 
+  margin-left: 170px; 
+}
+
 @media (max-width: 480px) {
   .button_open_quiz_popup {
-    margin-left: 100px;
+    margin-left: 80px;
   } 
 }
 
@@ -1225,109 +1366,3 @@ footer .social-icon {
     top: 60%;
   }
 }
-
-.about-us-main-img {
-  background-image: url('../images/About-us-main.png'); /* Замените на ваш путь к изображению */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-}
-
-
-.carousel {
-  margin-top: 200px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.carousel__item {
-  position: relative;
-  height: 55rem;
-  width: 45rem;
-  border-radius: 3px;
-  overflow: hidden;
-  /* box-shadow: 0 1rem 4rem rgba(0,0,0,.5); */
-  position: absolute;
-  transform: translate(-50%,-50%) scale(.1);
-  z-index: 0;
-  transition: all .2s linear;
-  
-}
-.carousel__item img {
-  width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-}
-
-.carousel__item--main {
-  transform: translate(-50%,-50%) scale(1);
-  z-index: 2;
-  cursor: pointer;
-}
-
-.carousel__item--left {
-  transform: translate(-130%,-50%) scale(.9);
-  z-index: 1;
-}
-.carousel__item--right {
-  transform: translate(30%,-50%) scale(.9);
-  z-index: 1;
-}
-.carousel__item--left img, .carousel__item--right img {
-  filter: grayscale(80%);
-}
-
-.carousel__item--right:hover {
-  transform: translate(10%,-50%) scale(1.2);
-  z-index: 3;
-  cursor: pointer;
-}
-.carousel__item--left:hover {
-  transform: translate(-110%,-50%) scale(1.2);
-  z-index: 3;
-  cursor: pointer;
-}
-.carousel__item--main:hover {
-  transform: translate(-50%,-50%) scale(1.2);
-}
-.carousel__item:hover > .carousel__text {
-  opacity: 1;
-}
-.carousel__item:hover img {
-  filter: grayscale(0%);
-}
-.carousel__btns {
-  position: absolute;
-  bottom: 10px; /* Опускаємо кнопки вниз */
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 2rem;
-  z-index: 5;
-}
-.carousel__btn {
-  background-color: rgba(0, 0, 0, 0.5); /* Трохи затемнити кнопки */
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-  border: 1px solid white;
-  color: white;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.carousel__btn svg {
-  height: 1.8rem;
-  width: 1.8rem;
-}
-.carousel__btn:hover {
-  color: #aaa;
-}
-
-
-
-
-
