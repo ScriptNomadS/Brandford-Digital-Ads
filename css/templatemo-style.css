@@ -7,6 +7,7 @@ body {
 
   overscroll-behavior-x: none; /* Запрещает горизонтальный скроллинг */
   overflow-x: hidden; /* Скрывает горизонтальную прокрутку */ 
+  
 }
 
 html, body {
@@ -107,7 +108,7 @@ a:hover, a:active, a:focus {
   margin-top: 0;
 }
 
-.overlay {
+/* .overlay {
   background: rgba(0,0,0,0.5);
   position: absolute;
   top: 0;
@@ -116,7 +117,7 @@ a:hover, a:active, a:focus {
   left: 0;
   width: 100%;
   height: 100%;
-}
+} */
 
 section {
   position: relative;
@@ -585,7 +586,7 @@ img .custom-navbar .navbar-brand {
 -----------------------------------------*/
 
 #team {
-  background: url('../images/Features.jpg') center center no-repeat,
+/*   background: url('../images/Features.jpg') center center no-repeat,
   -webkit-linear-gradient(to right, #1a2334 100%, #af8650 0%); 
   background: url('../images/Features.jpg') center center no-repeat,
   -moz-linear-gradient(to right, #1a2334 100%, #af8650 0%);
@@ -594,7 +595,7 @@ img .custom-navbar .navbar-brand {
   background: url('../images/Features.jpg') center center no-repeat,
   linear-gradient(to right, #1a2334 100%, #af8650 0%);
   background-size: cover;
-  background-blend-mode: overlay;
+  background-blend-mode: overlay; */
   width: 100%;
   height: 650px;
 }
@@ -766,6 +767,157 @@ img .custom-navbar .navbar-brand {
 
 
 /*---------------------------------------
+   DIGITAL+              
+-----------------------------------------*/
+.ftco-section-parallax {
+  position: relative; }
+  .ftco-section-parallax .parallax-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    padding: 4em 0; }
+  .ftco-section-parallax .heading-section-white h2 {
+    font-weight: 400 !important; }
+
+.form-control {
+  height: 52px !important;
+  background: #fff !important;
+  color: #000000 !important;
+  font-size: 18px;
+  border-radius: 5px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important; }
+  .form-control:focus, .form-control:active {
+    border-color: #000000; }
+
+textarea.form-control {
+  height: inherit !important; }
+
+
+.heading-section .subheading {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #1a2334; }
+
+.heading-section h2 {
+  font-size: 30px;
+  font-weight: 700; }
+  @media (max-width: 767.98px) {
+    .heading-section h2 {
+      font-size: 28px; } }
+
+.heading-section.heading-section-white .subheading {
+  color: #000000; }
+
+.heading-section.heading-section-white h2 {
+  font-size: 40px;
+  color: #000000; }
+
+.heading-section.heading-section-white p {
+  color: rgba(255, 255, 255, 0.9); }
+
+.img,
+.blog-img,
+.user-img {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.img-digital {
+  width: 150px;
+  height: auto;
+}
+
+.builder-section .image-section {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-section .subheading {
+  color: #1a2334;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.content-section h2 {
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.nav-pills .nav-link {
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #000;
+  background-color: #fff;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #1a2334;
+  color: #fff;
+  font-weight: 600;
+}
+
+.img-digital {
+  width: 500px;
+  height: auto;
+}
+
+.value-section h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #2a2a2a;
+}
+
+.value-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.value-section li {
+  font-size: 18px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .digital-third-text {
+    padding: 20px;
+  }
+
+  .value-section h2 {
+    font-size: 24px;
+  }
+
+  .value-section li {
+    font-size: 16px;
+  }
+}
+
+.digital-text {
+  width: 100%; /* или фиксированная ширина, например 800px */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow: hidden;
+  white-space: normal;
+}
+
+
+
+/*---------------------------------------
    MENU              
 -----------------------------------------*/
 
@@ -888,6 +1040,25 @@ img .custom-navbar .navbar-brand {
   }
 }
 
+.heading {
+  color: #ffffff;
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #af8650;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  margin-left: 110px;
+}
+
 /*---------------------------------------
     TESTIMONIAL             
 -----------------------------------------*/
@@ -905,35 +1076,35 @@ img .custom-navbar .navbar-brand {
               background-blend-mode: overlay;
 }
 
-.comments-img {
+/* .comments-img {
   border-radius: 20px;
-}
+} */
 
-#testimonial .owl-dots {
+/* #testimonial .owl-dots {
   position: relative;
   top: 0;
   right: 0;
   justify-content: center;
 }
-
-#testimonial .owl-theme .owl-dots .owl-dot,
+ */
+/* #testimonial .owl-theme .owl-dots .owl-dot,
 #testimonial .owl-theme .owl-dots .owl-dot span {
   display: inline-block;
-}
+} */
 
-#testimonial .owl-theme .owl-dots .owl-dot span {
+/* #testimonial .owl-theme .owl-dots .owl-dot span {
   margin: 20px 5px;
-}
+} */
 
 #testimonial h2 {
   color: #ffffff;
 }
 
-#testimonial p,
+/* #testimonial p,
 .tst-author h4,
 .tst-author span {
   display: inline;
-}
+} */
 
 #testimonial p {
   color: #d9d9d9;
@@ -941,18 +1112,18 @@ img .custom-navbar .navbar-brand {
   line-height: 35px;
 }
 
-.tst-author {
+/* .tst-author {
   margin-top: 20px;
-}
+} */
 
-.tst-author h4,
+/* .tst-author h4,
 .tst-author span {
   color: #b2b2b2;
 }
-
-.tst-author span {
+ */
+/* .tst-author span {
   margin-left: 5px;
-}
+} */
 
 
 
@@ -1351,7 +1522,6 @@ footer .social-icon {
     margin-top: 30px;
   }
 }
-
 
 @media only screen and (max-width: 580px) {
   h1 {

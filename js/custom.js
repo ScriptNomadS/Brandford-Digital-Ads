@@ -160,8 +160,18 @@
 })(jQuery);
 
 
-    // Features
-    
+    // Digital+
+
+  var swiper = new Swiper('.mobile-app-slider', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.mobile-app-slider-button-next',
+      prevEl: '.mobile-app-slider-button-prev',
+    },
+    loop: false,
+  });
+
 
 
 
