@@ -7,6 +7,7 @@ body {
 
   overscroll-behavior-x: none; /* Запрещает горизонтальный скроллинг */
   overflow-x: hidden; /* Скрывает горизонтальную прокрутку */ 
+  touch-action: manipulation;
   
 }
 
@@ -837,7 +838,7 @@ img .custom-navbar .navbar-brand {
     display: flex;
     justify-content: center;
     padding-left: 98%; /* або 5%, підбери вручну */
-    left: 5%;
+    left: 3.5%;
   }
 }
 
