@@ -348,7 +348,7 @@ img .custom-navbar .navbar-brand {
 
 #home h1 {
   color: #ffffff;
-  padding-bottom: 30px;
+ 
 }
 
 #home h3 {
@@ -357,7 +357,8 @@ img .custom-navbar .navbar-brand {
   line-height: inherit;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin: 0;
+  /* margin: 0; */
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
@@ -391,6 +392,47 @@ img .custom-navbar .navbar-brand {
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background-color: #ffffff;
   border-color: transparent;
+}
+
+.check-mark-header {
+  display: flex;
+  gap: 40px; /* Відстань між пунктами */
+  justify-content: flex-start; /* або center — на вибір */
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.check-mark {
+  font-size: 18px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.check {
+  color: #FFC107;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.headline {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.yellow-tag {
+  background-color: #f5b544;
+  color: black;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
 }
 
 .slider .caption {
@@ -492,6 +534,7 @@ img .custom-navbar .navbar-brand {
 }
 
 
+
 /*---------------------------------------
     ABOUT              
 -----------------------------------------*/
@@ -586,6 +629,17 @@ img .custom-navbar .navbar-brand {
 -----------------------------------------*/
 
 #team {
+  margin: 0;
+  background: url('../images/Features.jpg') no-repeat center center,
+              -webkit-linear-gradient(to right, #1a2334 100%, #af8650 0%); 
+  background: url('../images/Features.jpg') no-repeat center center,
+              -moz-linear-gradient(to right, #1a2334 100%, #af8650 0%);
+  background: url('../images/Features.jpg') no-repeat center center,
+              -o-linear-gradient(to right, #1a2334 100%, #af8650 0%); 
+  background: url('../images/Features.jpg') no-repeat center center,
+              linear-gradient(to right, #1a2334 100%, #af8650 0%);
+  background-size: cover;
+  background-blend-mode: overlay;
   width: 100%;
   height: 650px;
 }
@@ -822,7 +876,7 @@ textarea.form-control {
   height: auto;
 }
 
-.builder-section .image-section {
+#builder-section .image-section {
   background-size: cover;
   background-position: center;
   position: relative;
@@ -955,6 +1009,13 @@ textarea.form-control {
   margin-bottom: 20px;
   font-weight: bold;
   margin-left: 110px;
+}
+
+
+@media (max-width: 768px) {
+  .icon-circle {
+    margin-left: 155px;
+  }
 }
 
 /*---------------------------------------
@@ -1168,8 +1229,8 @@ footer .social-icon {
 }
 
 .footer-open-hour {
-  background: #d6a967;
-  background: url('../images/footer-image.avif') center center no-repeat;
+  /* background: #d6a967;
+  background: url('../images/footer-image.avif') center center no-repeat; */
   background-size: cover;
   border-radius: 20px;
   margin-top: 0;
@@ -1182,8 +1243,8 @@ footer .social-icon {
 }
 
 .footer-open-hour::after {
-  background: rgba(29,29,29,0.85);
-  content: "";
+  /* background: rgba(29,29,29,0.85); */
+  content: ""; 
   position: absolute;
   top: 0;
   right: 0;
@@ -1212,6 +1273,60 @@ footer .social-icon {
   margin-right: 10px;
 }
 
+.nav-item::before {
+  content: "➤";
+  color: #c18b52;
+  margin-right: 8px;
+}
+
+#footer li {
+  list-style-type: none;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 60px 20px 40px 20px;
+    text-align: left;
+  }
+
+  .footer-info,
+  .footer-open-hour,
+  footer .social-icon,
+  #footer .nav,
+  #footer .copyright {
+    text-align: left !important;
+    margin-left: 0 !important;
+  }
+
+  .footer-open-hour {
+    padding: 30px 20px;
+    right: 0;
+    bottom: 0;
+  }
+
+  #footer ul {
+    padding-left: 0;
+  }
+
+  .nav-item {
+    margin-left: 0;
+  }
+
+  footer .social-icon {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .copyright {
+    margin-top: 20px;
+    font-size: 13px;
+  }
+
+  .footer-navigation {
+    margin-left: -15px !important;
+  }
+}
 
 
 /*---------------------------------------
@@ -1395,5 +1510,49 @@ footer .social-icon {
 
   .menu-thumb .menu-info {
     top: 60%;
+  }
+}
+
+
+
+
+
+@media (max-width: 767px) {
+  .slider .caption {
+    padding: 2em 1em; /* Меньше отступов на мобильных */
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  #home h1,
+  #home h3,
+  .headline,
+  .check-mark-header,
+  .check-mark {
+    text-align: left !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+  }
+
+  .check-mark-header {
+    gap: 20px; /* Уменьшаем отступ между элементами */
+    flex-wrap: wrap; /* Чтобы при нехватке места переносились */
+  }
+
+  .yellow-tag {
+    font-size: 10px;
+    padding: 1px 6px;
+  }
+
+  .headline {
+    font-size: 16px;
+  }
+
+  .check-mark {
+    font-size: 16px;
+  }
+
+  .check {
+    font-size: 18px;
   }
 }
