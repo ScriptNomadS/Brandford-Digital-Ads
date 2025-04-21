@@ -629,11 +629,11 @@ img .custom-navbar .navbar-brand {
     TEAM              
 -----------------------------------------*/
 #about {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #team {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 
@@ -733,9 +733,11 @@ img .custom-navbar .navbar-brand {
 
 .carousel {
   margin-top: 200px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-left: 38%; /* або 5%, підбери вручну */
 }
 .carousel__item {
   position: relative;
@@ -822,6 +824,17 @@ img .custom-navbar .navbar-brand {
   color: #aaa;
 }
 
+
+@media (max-width: 768px) {
+  .carousel {
+    margin-top: 200px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 113%; /* або 5%, підбери вручну */
+  }
+}
 
 
 /*---------------------------------------
