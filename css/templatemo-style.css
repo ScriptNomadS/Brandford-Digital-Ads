@@ -826,13 +826,18 @@ img .custom-navbar .navbar-brand {
 
 
 @media (max-width: 768px) {
+  #team {
+    background-image: none;
+  }
+
   .carousel {
     margin-top: 200px;
-    position: relative;
+    position: absolute;
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-left: 113%; /* або 5%, підбери вручну */
+    padding-left: 98%; /* або 5%, підбери вручну */
+    left: 5%;
   }
 }
 
