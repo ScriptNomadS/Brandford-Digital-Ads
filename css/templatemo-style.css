@@ -624,10 +624,23 @@ img .custom-navbar .navbar-brand {
 }
 
 
+
 /*---------------------------------------
     TEAM              
 -----------------------------------------*/
+#about {
+  margin-bottom: 20px;
+}
 
+#team {
+  margin-top: 20px;
+}
+
+
+
+/*---------------------------------------
+    TEAM              
+-----------------------------------------*/
 #team {
   margin: 0;
 /*   background: url('../images/Features.jpg') no-repeat center center,
