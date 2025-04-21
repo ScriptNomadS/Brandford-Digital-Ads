@@ -630,14 +630,15 @@ img .custom-navbar .navbar-brand {
 
 #team {
   margin: 0;
-  background: url('../images/Features.jpg') no-repeat center center,
+/*   background: url('../images/Features.jpg') no-repeat center center,
               -webkit-linear-gradient(to right, #1a2334 100%, #af8650 0%); 
   background: url('../images/Features.jpg') no-repeat center center,
               -moz-linear-gradient(to right, #1a2334 100%, #af8650 0%);
   background: url('../images/Features.jpg') no-repeat center center,
               -o-linear-gradient(to right, #1a2334 100%, #af8650 0%); 
   background: url('../images/Features.jpg') no-repeat center center,
-              linear-gradient(to right, #1a2334 100%, #af8650 0%);
+              linear-gradient(to right, #1a2334 100%, #af8650 0%); */
+  background: url('../images/Gallery.jpg');
   background-size: cover;
   background-blend-mode: overlay;
   width: 100%;
