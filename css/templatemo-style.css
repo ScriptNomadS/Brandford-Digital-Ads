@@ -621,22 +621,17 @@ img .custom-navbar .navbar-brand {
       object-fit: contain; /* Запобігає обрізанню */
     }
   }
-  
+
 }
 
 
 
 /*---------------------------------------
-    TEAM              
+    SPACE            
 -----------------------------------------*/
 #about {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
-
-#team {
-  margin-top: 30px;
-}
-
 
 
 /*---------------------------------------
@@ -741,7 +736,7 @@ img .custom-navbar .navbar-brand {
   padding-left: 38%; /* або 5%, підбери вручну */
 }
 .carousel__item {
-  position: relative;
+  position: relative; 
   height: 55rem;
   width: 45rem;
   border-radius: 3px;
@@ -827,18 +822,15 @@ img .custom-navbar .navbar-brand {
 
 
 @media (max-width: 768px) {
-  #team {
-    background-image: none;
-  }
 
   .carousel {
     margin-top: 200px;
-    position: absolute;
+    position: relative; /* ← замість absolute */
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-left: 98%; /* або 5%, підбери вручну */
-    left: 3.5%;
+    padding-left: 107%; /* ← зроби більш адекватний відступ */
+    left: 0;
   }
 }
 
